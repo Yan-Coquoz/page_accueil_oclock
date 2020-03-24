@@ -43,6 +43,7 @@
     right: 15px;
     width: 60px;
     height: 60px;
+    z-index: 1;
 }
 
 .cadre_menu_sandwich {
@@ -51,16 +52,26 @@
     position: absolute;
 }
 
-.cadre_menu_sandwich span:nth-child(1) {
+.text_menu_mobile {
     display: inline-block;
+    font-family: "menu";
+    font-weight: 900;
     width: 100%;
     text-align: center;
     font-size: 9px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     color: #fffdd8;
+    opacity: 1;
+    transition-duration: 0.3s;
 }
 
-.cadre_menu_sandwich span:nth-child(2) {
+/* cache le texte "MENU" audessus du menu sandwich mobile au click */
+.text_menu_mobile_cacher{
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.span1 {
     display: inline-block;
     position: absolute;
     width: 50%;
@@ -68,9 +79,11 @@
     top: 25px;
     left: 15px;
     background-color: #fffdd8;
+    transform: rotate(0deg);
+    transition-duration: 0.3s;
 }
 
-.cadre_menu_sandwich span:nth-child(3) {
+.span2 {
     display: inline-block;
     position: absolute;
     width: 50%;
@@ -78,9 +91,11 @@
     top: 35px;
     left: 15px;
     background-color: #fffdd8;
+    opacity: 1;
+    transition-duration: 0.3s;
 }
 
-.cadre_menu_sandwich span:nth-child(4) {
+.span3 {
     display: inline-block;
     position: absolute;
     width: 50%;
@@ -88,6 +103,26 @@
     top: 45px;
     left: 15px;
     background-color: #fffdd8;
+    transform: rotate(0deg);
+    transition-duration: 0.3s;
+}
+
+/* changement du menu sandwich au click du btn menu */
+.span1_cacher {
+    top: 35px;
+    transform: rotate(135deg);
+    transition-duration: 0.3s;
+}
+
+.span2_cacher {
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.span3_cacher {
+    top: 35px;
+    transform: rotate(-135deg);
+    transition-duration: 0.3s;
 }
 
 /************************************************************************************************/
@@ -97,10 +132,13 @@
 /*********************/
 
 .nav_mobile {
-    /* display: none; */
+    display: none;
     width: 100%;
     height: 100%;
     background-color: rgb(14, 163, 141);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* au click btn menu sandwich en js affiche le menu */
@@ -120,7 +158,7 @@
 }
 
 .ul_menu_mobile a {
-    font-size: 18px;
+    font-size: 19px;
     letter-spacing: 2px;
     display: inline-block;
     text-decoration: none;
@@ -144,7 +182,7 @@
 }
 
 .accueil_point_droite{
-    margin-left: 10px;
+    margin-left: 8px;
     background-color: #fffdd8;
     display: inline-block;
     width: 7px;
@@ -153,4 +191,46 @@
     vertical-align: middle;
 }
 
+.etiquette_laTeam{
+    display: inline-block;
+    padding: 2px 5px 2px 5px;
+    border: #fffdd8 solid 1px;
+    border-radius: 3px;
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #2d98da;
+    background-color: #fffdd8;
+    vertical-align: text-top;
+}
 /************************************************************************************************/
+
+header{
+    background-color: rgb(10, 195, 167);
+    padding-top: 80px;
+}
+
+.section_header_1{
+
+}
+
+.img_section_1{
+    background-image: url(https://oclock.io/images/logo.2bd12253.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 77px;
+}
+
+.cadre_text_section_1{
+    padding: 30px 20px 30px 30px;
+
+}
+
+.para_text_section_1{
+    color: #fffdd8;
+    font-family: "font_principal";
+    font-size: 18px;
+    font-weight: 700;
+    text-align: justify;
+}
