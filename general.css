@@ -240,7 +240,6 @@ header {
 }
 
 /* section 2 */
-
 .section_2 {
     display: flex;
     flex-direction: column;
@@ -252,10 +251,18 @@ header {
     padding-top: 30px;
 }
 
+.span_img_section_2_partie_1{
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 56px;
+    width: 56px;
+    display: inline-block;
+    border-radius: 40px;
+}
+
 .img_section_2_partie_1 {
     background-image: url(https://oclock.io/images/videoconf.dc8fe88f.svg);
     background-repeat: no-repeat;
-    background-size: 70%;
+    background-size: 65%;
     background-position: center;
     height: 56px;
     width: 56px;
@@ -266,7 +273,7 @@ header {
 .img_section_2_partie_2 {
     background-image: url(https://oclock.io/images/heart.95a56b70.svg);
     background-repeat: no-repeat;
-    background-size: 70%;
+    background-size: 65%;
     background-position: center;
     height: 56px;
     width: 56px;
@@ -277,7 +284,7 @@ header {
 .img_section_2_partie_3 {
     background-image: url(https://oclock.io/images/fan.5b00cb55.svg);
     background-repeat: no-repeat;
-    background-size: 70%;
+    background-size: 65%;
     background-position: center;
     height: 56px;
     width: 56px;
@@ -288,7 +295,7 @@ header {
 .img_section_2_partie_4 {
     background-image: url(https://oclock.io/images/glove.9542674c.svg);
     background-repeat: no-repeat;
-    background-size: 70%;
+    background-size: 65%;
     background-position: center;
     height: 56px;
     width: 56px;
